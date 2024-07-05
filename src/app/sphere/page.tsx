@@ -19,7 +19,7 @@ import { useToast } from '@/components/ui/use-toast'
 import CustomLink from '@/components/ui/link'
 import Image from 'next/image'
 import profilePic from '@/app/avatar.png'
-import ShaderBlob from '@/components/ShaderBlob'
+import ShaderSphere from '@/components/ShaderSphere'
 import { Canvas } from '@react-three/fiber'
 import { Suspense, useState } from 'react'
 import { EffectControls } from '@/components/EffectControlls'
@@ -40,7 +40,7 @@ export default function Home() {
     <main className="relative flex w-screen h-[500vh] flex-col items-start justify-center p-24">
       <div className="fixed z-0 inset-0 bg-black h-100vh">
         <Canvas>
-          <ShaderBlob color={[1, 1, 1]} />
+          <ShaderSphere color={[1, 1, 1]} radius={2} />
         </Canvas>
       </div>
       <div className="w-full p-12 fixed flex justify-between items-center top-0 right-0 left-0">
