@@ -39,7 +39,7 @@ export default function Home() {
     <main className="relative flex w-screen h-screen flex-col items-start justify-center p-24">
       <div className="fixed z-0 inset-0 bg-black">
         <Canvas>
-          <ShaderCanvas />
+          <ShaderCanvas color={[1, 1, 1]} />
         </Canvas>
       </div>
       <div className="w-full p-12 fixed flex justify-between items-center top-0 right-0 left-0">
@@ -75,7 +75,7 @@ export default function Home() {
         <div className="flex flex-col space-y-8">
           <div className="w-full flex flex-col items-center space-y-4">
             <h1 className='className="border-b pb-2 text-5xl font-semibold tracking-tight first:mt-0"'>
-              Noise Effect{' '}
+              Fluid Effect{' '}
               <Component
                 size={40}
                 strokeWidth={2}
