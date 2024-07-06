@@ -25,6 +25,7 @@ import { Suspense, useState } from 'react'
 import { EffectControls } from '@/components/EffectControlls'
 import { component } from '@/lib/copyable'
 import Link from 'next/link'
+import { Navigation } from '@/components/Navigation'
 
 const projectLinks = {
   code: 'https://github.com/alexjedi/noise-effect',
@@ -127,17 +128,7 @@ export default function Home() {
         </div>
       </section>
       <div className="w-full p-12 fixed flex justify-between items-end bottom-0 right-0 left-0 z-10 pointer-events-none">
-        <div className="space-x-3 pointer-events-auto flex">
-          <Link href={'/'} className="text-muted-foreground">
-            Blob
-          </Link>
-          <Link href={'/sphere'} className="text-muted-foreground">
-            Sphere
-          </Link>
-          <Link href={'/pyramid'} className="text-muted-foreground">
-            Pyramind
-          </Link>
-        </div>
+        <Navigation />
       </div>
     </main>
   )
