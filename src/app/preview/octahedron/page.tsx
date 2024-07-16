@@ -44,7 +44,7 @@ export default function Home() {
     <main className="relative flex w-screen h-[100vh] flex-col items-start justify-center p-24">
       <div className="fixed z-0 inset-0 bg-black h-100vh">
         <Canvas>
-          <ShaderBlob color={[1, 1, 1]} />
+          <ShaderOctahedron color={[1, 1, 1]} radius={2} detail={0} />
         </Canvas>
       </div>
     </main>

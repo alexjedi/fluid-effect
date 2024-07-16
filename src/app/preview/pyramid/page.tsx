@@ -41,10 +41,10 @@ const projectLinks = {
 export default function Home() {
   const { toast } = useToast()
   return (
-    <main className="relative flex w-screen h-[100vh] flex-col items-start justify-center p-24">
+    <main className="relative flex w-screen h-[500vh] flex-col items-start justify-center p-24">
       <div className="fixed z-0 inset-0 bg-black h-100vh">
         <Canvas>
-          <ShaderBlob color={[1, 1, 1]} />
+          <ShaderPyramid color={[1, 1, 1]} radius={2} height={5} radialSegments={4} />
         </Canvas>
       </div>
     </main>
