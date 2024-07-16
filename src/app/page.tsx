@@ -44,7 +44,7 @@ export default function Home() {
     <main className="relative flex w-screen h-[500vh] flex-col items-start justify-center p-24">
       <div className="fixed z-0 inset-0 bg-black h-100vh">
         <Canvas>
-          <ShaderOctahedron color={[1, 1, 1]} radius={2} detail={100} />
+          <ShaderBlob color={[1, 1, 1]} />
         </Canvas>
       </div>
       <div className="w-full p-12 fixed flex justify-between items-center top-0 right-0 left-0">
@@ -130,9 +130,9 @@ export default function Home() {
           </div>
         </div>
       </section>
-      {/* <div className="w-full p-12 fixed flex justify-between items-end bottom-0 right-0 left-0 z-10 pointer-events-none">
+      <div className="w-full p-12 fixed flex justify-between items-end bottom-0 right-0 left-0 z-10 pointer-events-none">
         <Navigation />
-      </div> */}
+      </div>
     </main>
   )
 }
